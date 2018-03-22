@@ -10,7 +10,14 @@ The Library works fine for getting the dowloadable URL. But the library is in ea
 2. Download RMYoutubeExtractorFiles, include them also in your Project.
 3. Call the function like this:
 
-```swift
+
+
+**Objective-C**
+
+
+```objective-c
+import "Appname-Swift.h"
+
  RMYouTubeExtractor *rmYtExtractor = [RMYouTubeExtractor sharedInstance];    
 [rmYtExtractor extractVideoForIdentifier: youtubeID completion:^(NSDictionary *videoDictionary, NSError *error) {
     if(!error){
@@ -33,3 +40,5 @@ The Library works fine for getting the dowloadable URL. But the library is in ea
 
 }];
 ```
+
+
